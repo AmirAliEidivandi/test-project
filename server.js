@@ -1,6 +1,18 @@
 const express = require("express");
 const app = express();
 
+app.get("/git", (req, res) => {
+  res.send("this is git route");
+});
+
+app.get("/dev", (req, res) => {
+  res.send("this is dev route");
+});
+
+app.get("/post", (req, res) => {
+  res.send("this is post route");
+});
+
 app.get("/", (req, res) => {
   res.send("hello world");
 });
